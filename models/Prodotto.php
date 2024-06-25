@@ -15,4 +15,10 @@ class Prodotto {
         $this->categoria = $terzoArgomento;
     }
 
+    public function getDescrizione() {
+
+        return "$this->nome è un prodotto della categoria " . $this->categoria?->nome . " ed ha un prezzo di $this->prezzo";
+
+    }
+
 }
